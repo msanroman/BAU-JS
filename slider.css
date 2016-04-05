@@ -1,0 +1,110 @@
+body {
+  background-color: #222729;
+}
+
+.slideshow {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background: black;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.slideshow .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+	padding: 0;
+}
+.slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+.slides li:nth-child(1) {
+  background: url(https://unsplash.it/1000/500?random&cache=1) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slides li:nth-child(2) {
+  background: url(https://unsplash.it/1000/500?random&cache=2) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slides li:nth-child(3) {
+  background: url(https://unsplash.it/1000/500?random&cache=3) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slides li:nth-child(4) {
+  background: url(https://unsplash.it/1000/500?random&cache=4) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: bold;
+  background: #fff;
+  padding: 10px 5px;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+.prev:hover,
+.next:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.nav {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 1;
+}
+.nav li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+.nav li:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.active-cd {
+  background-color: #fff;
+}
+.info {
+  text-align: center;
+  color: #787878;
+}
+
