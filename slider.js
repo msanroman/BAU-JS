@@ -2,7 +2,8 @@ $(document).ready(function() {
 	$('#slide-1').show();
 	$('#nav-1').addClass('active-cd');
 	
-	$('.next').click(function() {
+
+	function siguienteSlide() {
 		var actual = $('.slides li:visible');
 		var siguiente = actual.next();
 		var circuloActual = $('.active-cd');
@@ -20,7 +21,19 @@ $(document).ready(function() {
 		circuloActual.removeClass('active-cd');
 		siguiente.show();
 		siguienteCirculo.addClass('active-cd');
+	}
+	
+	var intervalo = setInterval(siguienteSlide, 1000);
+
+	$('.slideshow').mouseenter(function() {
+		clearInterval(intervalo);
 	});
+
+	$('.slideshow').mouseleave(function() {
+		intervalo = setInterval(siguienteSlide, 1000);
+	});
+
+	$('.next').click(siguienteSlide);
 	$('.prev').click(function() {
 		var actual = $('.slides li:visible');
 		var anterior = actual.prev();
