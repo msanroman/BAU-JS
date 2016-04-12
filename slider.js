@@ -24,13 +24,20 @@ $(document).ready(function() {
 	$('.prev').click(function() {
 		var actual = $('.slides li:visible');
 		var anterior = actual.prev();
+		var circuloActual = $('.active-cd');
+		var circuloAnterior = circuloActual.prev();
 
 		if (anterior.length == 0) {
 			anterior = $('#slide-4');
 		}
+		if (circuloAnterior.length == 0) {
+			circuloAnterior = $('#nav-4');
+		}
 
 		actual.hide();
 		anterior.show();
+		circuloActual.removeClass('active-cd');
+		circuloAnterior.addClass('active-cd');
 	});
 
 	$('.nav li').click(function() {
