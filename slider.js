@@ -17,9 +17,9 @@ $(document).ready(function() {
 			siguienteCirculo = $('#nav-1');
 		}
 
-		actual.hide();
+		actual.fadeOut(500);
 		circuloActual.removeClass('active-cd');
-		siguiente.show();
+		siguiente.fadeIn(500);
 		siguienteCirculo.addClass('active-cd');
 	}
 	
