@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <!-- ======== META TAGS ======== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="keywords" content="my, tags">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ======== / META TAGS ======== -->
+        <!-- ======== STYLESHEETS ======== -->
+        <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/lightbox.min.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Alike" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <noscript>
+			<link rel="stylesheet" href="assets/css/nojs.css" type="text/css">
+        </noscript>
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+        <![endif]-->
+        <!-- ======== / STYLESHEETS ======== -->
+        <!-- ======== STANDARD SCRIPTS ======== -->
+        <script src="assets/js/jquery.js"></script>
+        <!--[if lt IE 9]>
+                <script src="assets/js/html5shiv.js"></script>
+                <script src="assets/js/respond.js"></script>
+        <![endif]-->
+        <!-- ======== / STANDARD SCRIPTS ======== -->
+    </head>
+    <style>
+      .form-1 input,
+      .form-1 textarea {
+        border: 1px solid #7B6666;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #7B6666;
+      }
+
+      label.error {
+        color: #DB2020!important;
+      }
+
+      input.error {
+        border: 2px solid #DB2020!important;
+      }
+
+      label {
+        display: none;
+      }
+    </style>
+    <body>
+		<div id="page-container">
+
+			<section id="page">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 column">
+							<article id="page-content" class="clearfix editor-styles">
+								<header>
+									<h2>Contact</h2>
+								</header>
+								<p>Sed in elit eu dui pharetra ullamcorper a sit amet nulla. Nam ex purus, dignissim eu tristique sed, porttitor non arcu. Vestibulum nibh lorem, consectetur molestie nisl non, euismod consequat quam. Quisque sit amet arcu ut mi varius dignissim. Etiam quis hendrerit ante, sed varius nunc.</p><br>
+
+              	<form method="post" action="" id="contactform" class="form-1 clearfix">
+									<div class="col-lg-12">
+                    <label class="error">Must be between 4 and 15 characters</label>
+										<input type="text" name="personal" placeholder="Name*">
+									</div>
+                  <div class="col-lg-12">
+                    <label class="error">Can't have spaces nor special characters other than _ (underscore)</label>
+										<input type="text" name="username" placeholder="Username*">
+									</div>
+									<div class="col-lg-12">
+										<input type="text" name="website" placeholder="Website">
+									</div>
+									<div class="col-lg-12">
+                    <label class="error">This is not a valid phone number</label>
+										<input type="text" name="phone" placeholder="Phone number*">
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12">
+										<button type="submit" name="send_email">Send message</button>
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-12">
+										<div class="loading"><img src="assets/img/loading.gif" alt=""></div>
+										<div id="success-message">Thanks for your message</div>
+										<div id="error-message">Problem with send</div>
+									</div>
+									<div class="clearfix"></div>
+								</form>
+
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+        <!-- ======== OTHER SCRIPTS ======== -->
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <!-- ======== /OTHER SCRIPTS ======== -->
+        <script>
+          function validateEmail(sEmail) {
+              var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+              if (filter.test(sEmail))
+                  return true;
+              else
+                  return false;
+          }
+        </script>
+    </body>
+</html>
