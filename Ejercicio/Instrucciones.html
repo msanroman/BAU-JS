@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.11 (451577)"/><meta name="altitude" content="24.39849281311035"/><meta name="author" content="mike@msanroman.io"/><meta name="created" content="2015-05-12 13:15:58 +0000"/><meta name="latitude" content="41.3812881493738"/><meta name="longitude" content="2.152810801918047"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-05-12 13:18:56 +0000"/><title>Untitled</title></head><body>
+<div><span style="font: 16.0px 'Avenir Next'">Entregar el archivo</span> <span style="font: 16.0px 'Avenir Next'"><i>assets/js/menu.js</i></span> <span style="font-family: 'Avenir Next';"><span style="font-size: 16px;">con el código necesario para que el menú tenga el siguiente comportamiento:</span></span></div>
+<div><span style="font: 16.0px 'Avenir Next'"><br/></span></div>
+<ul>
+<li><span style="font-family: 'Avenir Next';"><span style="font-size: 16px;">Al hacer click en cualquier &lt;a&gt; de primer nivel, añadir a su &lt;li&gt; padre la clase "current-menu-item", para que quede resaltado. Al seleccionar otro, quitarle esa clase al anterior que lo tuviera.</span></span></li>
+<li><span style="font-family: 'Avenir Next';"><span style="font-size: 16px;">Al hacer hover sobre los &lt;li&gt; de primer nivel, mostrar su submenu (es decir, su &lt;ul class="sub-menu"&gt;) con efecto fade.</span></span></li>
+</ul>
+<div><span style="font: 16.0px 'Avenir Next'"><br/>
+Ejemplo: <a href="http://cl.ly/131N0r203o3m">http://cl.ly/131N0r203o3m</a><br/>
+<br/></span></div>
+<div><span style="font-size: 16px;"><span style="font-family: 'Avenir Next';">Además, en la versión responsive del menú (cuando la ventana es menor o igual a 990px de ancho):</span></span></div>
+<ul>
+<li><span style="font-size: 16px;"><span style="font-family: 'Avenir Next';">Al hacer click en el icono de hamburguesa (#mobile-button), mostrar el menu (#menu-container), ocultar el icono de hamburguesa y mostrar el de cerrar (#mobile-close).</span></span></li>
+<li><span style="font-size: 16px;"><span style="font-family: 'Avenir Next';">Al hacer click en el icono de cerrar, ocultar el menú y mostrar el icono de hamburguesa de nuevo.</span></span></li>
+</ul>
+<div><span style="font: 16.0px 'Avenir Next'"><br/>
+Ejemplo: <a href="http://cl.ly/3w1G2L1S1H3J">http://cl.ly/3w1G2L1S1H3J</a></span></div>
+<ul>
+<li><span style="font-size: 16px;"><span style="font-family: 'Avenir Next';">Al hacer click en una de las opciones del menú, mostrar su submenu con un display block (solo en la versión mobile del menú). Ejemplo: <a href="http://cl.ly/2f1b1p1y0K1Q">http://cl.ly/2f1b1p1y0K1Q</a></span></span></li>
+</ul>
+<div><span style="font-size: 16px;"><br/></span></div>
+<div><span style="font: 16.0px 'Avenir Next'">Referencia de funciones de jQuery:</span> <a href="http://oscarotero.com/jquery/">http://oscarotero.com/jquery/</a></div>
+<div><span style="font-size: 16px;"><span style="font-family: 'Avenir Next';"><br/></span></span></div>
+<code><pre>
+  $(document).ready(function(){}); // ejecuta el código dentro de la función cuando el documento haya cargado
+  $('elemento').toggle(); //cambia display block/none y viceversa
+  $('elemento').fadeToggle(); //cambia display block/none con effect fadeIn/out
+  $('elemento').show(); //display:block; en el elemento
+  $('elemento').hide(); //display:none; en el elemento
+  $(window).resize(function(){}); //evento para escuchar cuando la ventana se está redimensionando
+  $(window).width(); //devuelve el ancho de la pantalla
+</pre></code>
+</body></html>
